@@ -1,0 +1,238 @@
+:root {
+    --dark: #374151;
+    --darker: #1F2937;
+    --darkest: #111827;
+    --grey: #6B7280;
+    --pink: #EC4899;
+    --purple: #8B5CF6;
+    --light: #EEE;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Fira sans", sans-serif;
+}
+
+header {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: var(--dark);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--light);
+    margin-bottom: 1rem;
+}
+
+
+/* CSS for task-form */
+
+#task-form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#task-form input[type="text"],
+#task-form input[type="date"],
+#task-form textarea {
+    /* Apply the styles to textarea as well */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 16px;
+    resize: vertical;
+    /* Allows vertical resizing of the textarea */
+}
+
+#task-form button {
+    background-color: #ec7c20;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#task-form button:hover {
+    background-color: #0056b3;
+}
+
+
+/* CSS for sort-filter */
+
+.sort-filter {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#sort-select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+#task-filter {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+
+/* Style the "Sort by" label */
+
+label {
+    color: #000000;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+/* Style the search input */
+
+#task-filter::placeholder {
+    color: #aaa;
+}
+
+
+/* Style the search input on focus */
+
+#task-filter:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+
+/* Style the select input */
+
+#sort-select {
+    background-color: #f9f9f9;
+}
+
+
+/* Style the hover effect for select options */
+
+#sort-select:hover {
+    background-color: #f0f0f0;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+}
+
+.task-item.completed {
+    background-color: #c1ebc1;
+}
+
+.delete-button {
+    border-radius: 5px;
+    background-color: #ff3333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.edit-button {
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#datepicker {
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.task-details {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    color: #000;
+}
+
+.task-item-table {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000000;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.table-row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #000000;
+    width: 100%;
+}
+
+.table-cell {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    color: #000;
+}
+
+.header {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+.task-details {
+    width: 100%;
+}
+
+.task-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    color: #000;
+}
